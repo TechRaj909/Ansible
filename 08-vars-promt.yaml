@@ -1,13 +1,13 @@
 - name: Varibels 
   hosts: local
   connection: local
-  vars_promt:
+  vars_prompt:
   - name: COURSE
-    promt: please enter course name
+    prompt: please enter course name
   - name: DURATION
-    promt: please enter DURATION name
+    prompt: please enter DURATION name
   - name: TRAINER
-    promt: please enter TRAINER name
+    prompt: please enter TRAINER name
 
   tasks:
   - name: PLAY 1
