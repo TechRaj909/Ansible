@@ -7,5 +7,5 @@
     TRAINER: Nikhilraj
   tasks:
   - name: PLAY VARS
-    ansible.bulitin.debug:
+    ansible.builtin.debug:
       msg: "{{COURSE}} is the {{DURATION}} and trained under {{TRAINER}}"
