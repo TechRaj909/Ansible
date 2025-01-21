@@ -2,18 +2,18 @@
   hosts: local
   connection: local
   vars: 
-    COURSE: JAVA
+    COURSE:   JAVA
     DURATION: 120
   
-  topics:
+    topics:
     - linux
-      shell
-      ansible
+    - shell
+    - ansible
 
-  tolls:
-    dev: java
-    qa: swagger 
-    uat: website
+    tolls:
+      dev: java
+      qa: swagger 
+      uat: website
 
   ispresent: true
   tasks:
