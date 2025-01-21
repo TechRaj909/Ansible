@@ -1,0 +1,24 @@
+- name: datatypes
+  hosts: local
+  connection: local
+  vars: 
+    COURSE: JAVA
+    DURATION: 120
+  
+  topics:
+  - linux
+  - shell
+  - ansible
+
+  tolls:
+    dev: java
+    qa: swagger 
+    uat: website
+
+  ispresent: true
+  tasks:
+    ansible.builtin.debug:
+      msg: {{COURSE}} if you take this {{DURATION}} and {{topics}} and environments to test {{tolls}} are you intrested{{ispresent}}
+
+    
+  
