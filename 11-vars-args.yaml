@@ -1,0 +1,7 @@
+- name: Varibels 
+  hosts: local
+  connection: local
+  tasks:
+  - name: PLAY 1
+    ansible.builtin.debug:
+      msg: "{{COURSE}} course is can complte {{DURATION}} if you trained under {{TRAINER}}"
