@@ -1,0 +1,11 @@
+- name: Varibels 
+  hosts: local
+  connection: local
+  Vars:
+    COURSE: DEVOPS
+    DURATION: 3MONTHS
+    TRAINER: Nikhilraj
+  tasks:
+  - name: PLAY VARS
+    ansible.bulitin.debug:
+      msg: "{{COURSE}} is the {{DURATION}} and trained under {{TRAINER}}"
