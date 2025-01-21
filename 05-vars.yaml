@@ -1,7 +1,7 @@
 - name: Varibels 
   hosts: local
   connection: local
-  Vars:
+  vars:
     COURSE: DEVOPS
     DURATION: 3MONTHS
     TRAINER: Nikhilraj
