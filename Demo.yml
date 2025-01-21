@@ -1,0 +1,23 @@
+- name:   Nikhilraj
+  email:  nikhilraj@gmail.com
+  adress:
+  - type: Perminent
+    door: 101
+    street: city
+    city: hyd
+  - type: temparory
+    dor:  102
+    street: vill
+    city: wgl
+
+- name:   Nikhilraj
+  email:  nikhilraj@gmail.com
+  adress:
+  - type: Perminent
+    door: 101
+    street: city
+    city: hyd
+  - type: temparory
+    dor:  102
+    street: vill
+    city: wgl
