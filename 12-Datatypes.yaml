@@ -6,9 +6,9 @@
     DURATION: 120
   
   topics:
-  - linux
-  - shell
-  - ansible
+    - linux
+    - shell
+    - ansible
 
   tolls:
     dev: java
