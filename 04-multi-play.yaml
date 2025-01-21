@@ -3,13 +3,13 @@
   connection: local
   tasks: 
   - name: PLAY1
-   ansible.builtin.debug:
-    msg: hello play1
+    ansible.builtin.debug:
+      msg: hello play1
 
 - name: Multiplay
   hosts: local
   connection: local
   tasks: 
   - name: PLAY2
-   ansible.builtin.debug:
-    msg: hello play2
+    ansible.builtin.debug:
+      msg: hello play2
