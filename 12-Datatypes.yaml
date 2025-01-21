@@ -7,8 +7,8 @@
   
   topics:
     - linux
-    - shell
-    - ansible
+      shell
+      ansible
 
   tolls:
     dev: java
