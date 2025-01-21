@@ -2,8 +2,6 @@
   hosts: web
   tasks:
   - name: PLAY 1
-    vars:
-      COURSE: Ansible
     ansible.builtin.debug:
       msg: "{{COURSE}} course is can complte {{DURATION}} if you trained under {{TRAINER}}"
   # - name: PLAY 2
