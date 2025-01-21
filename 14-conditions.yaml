@@ -4,11 +4,11 @@
   tasks:
   - name: play1
     ansible.builtin.debug:
-      msg: "when {{number}} is greter than 15"
-    when: {{number}} > 10
+      msg: "when {{ number }} is greter than 15"
+    when: {{ number }} > 10
 
     
   - name: play2
     ansible.builtin.debug:
-      msg: "when {{number}} is greter than 15"
-    when: {{number}} > 15
+      msg: "when {{ number }} is greter than 15"
+    when: {{ number }} > 15
