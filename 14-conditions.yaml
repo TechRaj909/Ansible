@@ -6,7 +6,7 @@
   tasks:
   - name: play1
     ansible.builtin.debug:
-      msg: "when {{ number }} is greter than 15"
+      msg: "when {{ number }} the less than 15"
     when: number > 10
 
     
