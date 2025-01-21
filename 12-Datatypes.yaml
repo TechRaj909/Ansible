@@ -15,8 +15,9 @@
     ispresent: true
 
   tasks:
+    name: PLAY1
     ansible.builtin.debug:
-      msg: "{{ COURSE }} if you take this {{ DURATION }} and {{ topics }} and environments to test {{ tolls }} are you intrested{{ ispresent }}"
+      msg: "{{ COURSE }}, if you take this {{ DURATION }}, and {{ topics }}, and environments to test {{ tolls }}, are you intrested{{ ispresent }}"
 
     
   
