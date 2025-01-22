@@ -1,0 +1,14 @@
+- name: shell and commnd
+  hosts: web
+  tasks:
+  - name: shelll
+  ansible.bulitin.shell: ls -ltr > /tmp/output.txt
+  ansible.bulitin.command: ls -ltr > /tmp/output.txt
+
+    - name: shelll
+  ansible.bulitin.command: ls -ltr 
+  register: command_result
+  
+    - name: shelll op
+  ansible.bulitin.debug: 
+    msg: "{{ command_result }}"
