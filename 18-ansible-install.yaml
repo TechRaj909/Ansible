@@ -3,7 +3,7 @@
   become: yes
   tasks: 
   - name: install softs
-    ansible.builtin.pacakage:
+    ansible.builtin.package:
       name: "{{ item }}"
     loop:
     - git
