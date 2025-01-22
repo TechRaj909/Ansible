@@ -1,5 +1,6 @@
 - name: install based os
   hosts: web
+  become: yes
   tasks: 
   - name: install nginx in redhat
     ansible.builtin.dnf:
