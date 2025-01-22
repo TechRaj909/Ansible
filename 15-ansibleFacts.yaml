@@ -1,0 +1,7 @@
+- name: ansible facts
+  hosts: local
+  connection: local
+  tasks:
+  - name: play1
+    ansible.biltin.pacakage:
+      msg: "{{ ansible-facts }}"
