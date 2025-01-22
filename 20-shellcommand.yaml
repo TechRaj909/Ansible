@@ -5,10 +5,10 @@
     ansible.builtin.shell: ls -ltr > /tmp/output.txt
     # ansible.builtin.command: ls -ltr > /tmp/output.txt
 
-  # - name: shelll
-  #   ansible.builtin.command: ls -ltr 
-  #   register: command_result
+  - name: shelll
+    ansible.builtin.command: ls -ltr 
+    register: command_result
   
-  # - name: shelll op
-  #   ansible.builtin.debug: 
-  #   msg: "{{ command_result }}"
+  - name: shelll op
+    ansible.builtin.debug: 
+    msg: "{{ command_result }}"
