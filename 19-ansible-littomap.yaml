@@ -3,4 +3,4 @@
   tasks: 
   - name: playbook1
     ansible.builtin.debug:
-    msg: " Hello{{ Person | 'ramesh' }} "
+      msg: " Hello{{ Person | 'ramesh' }} "
