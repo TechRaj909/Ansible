@@ -3,11 +3,13 @@
   tasks: 
   - name: install nginx in redhat
     ansible.builtin.dnf:
+      name: nginx
       state: installed
     when: ansible_os_family == "RedHat"
 
   - name: install nginx in ubuntu
     ansible.builtin.apt:
+      name: nginx
       state: installed
     when: ansible_os_family == "Debian"
     
