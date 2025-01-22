@@ -11,4 +11,4 @@
   
   - name: shelll op
     ansible.builtin.debug: 
-    msg: "{{ command_result }}"
+      msg: "{{ command_result }}"
