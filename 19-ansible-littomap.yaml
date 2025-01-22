@@ -4,3 +4,9 @@
   - name: playbook1
     ansible.builtin.debug:
       msg: " Hello{{ Person | default('ramesh') }} "
+
+ - name: playbook1
+   vars: 
+    fruits: " apple , banana , orange "
+    ansible.builtin.debug:
+      msg: " my fruits {{ fruits | split(,) }} "
