@@ -3,5 +3,5 @@
   connection: local
   tasks:
   - name: play1
-    ansible.builtin.pacakage:
+    ansible.builtin.debug:
       msg: "{{ ansible-facts }}"
