@@ -1,12 +1,20 @@
 - name: String to List 
   hosts: web
   tasks: 
-  - name: playbook1
+  - name: task1
     ansible.builtin.debug:
       msg: " Hello{{ Person | default('ramesh') }} "
 
-  - name: playbook1
+  - name: task21
     vars: 
       fruits: " apple , banana , orange "
     ansible.builtin.debug:
       msg: " my fruits {{ fruits | split(',') }} "
+  - name: task3
+    fruits:
+      apple: one
+      banana: two
+      orange: threee
+    ansible.builtin.debug:
+      msg: "my fruits count{{ fruits | dict2items }}"
+    
