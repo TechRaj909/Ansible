@@ -4,8 +4,10 @@
   tasks: 
   - name: install softs
     ansible.builtin.package:
-      name: "{{ item }}"
+      name: "{{ item.name }}"
+      state: "{{ item.state }}"
     loop:
-    - git
-    - mysql
-    - zip
+    - {name: 'git' , state: 'prasent'}
+    - {name: 'gcc' , state: 'prasent'}
+    - {name: 'mysql' , state: 'absent'}
+    - {name: 'zip' , state: 'absent'}
