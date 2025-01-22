@@ -18,4 +18,11 @@
         orange: threee
     ansible.builtin.debug:
       msg: "my fruits count{{ fruits | dict2items }}"
-    
+  - name: list to map
+    vars:
+      fruits:
+        - {'key': 'apple', 'value': 'one'}
+        - {'key': 'banana', 'value': 'two'}
+        - {'key': 'orange', 'value': 'three'},
+    ansible.builtin.debug:
+      msg: "{{ fruits | items2dict }}"
