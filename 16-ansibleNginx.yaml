@@ -2,12 +2,12 @@
   hosts: web
   tasks: 
   - name: install nginx in redhat
-    ansible.bulitin.dnf:
+    ansible.builtin.dnf:
       state: installed
     when: ansible_os_family == "RedHat"
 
   - name: install nginx in ubuntu
-    ansible.bulitin.apt:
+    ansible.builtin.apt:
       state: installed
     when: ansible_os_family == "Debian"
     
