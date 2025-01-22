@@ -1,0 +1,11 @@
+- name: install soft
+  host: web
+  become: yes
+  tasks: 
+  - name: install softs
+    ansible.builtin.pacakage:
+      name: {{ iteam }}
+    loop:
+    - git
+    - mysql
+    - zip
