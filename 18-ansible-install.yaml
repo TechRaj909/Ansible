@@ -4,7 +4,7 @@
   tasks: 
   - name: install softs
     ansible.builtin.pacakage:
-      name: {{ item }}
+      name: "{{ item }}"
     loop:
     - git
     - mysql
