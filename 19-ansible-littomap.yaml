@@ -1,7 +1,6 @@
 - name: String to List 
-  host: web
+  hosts: web
   tasks: 
   - name: playbook1
     ansible.builtin.debug:
     msg: " Hello{{ Person | 'ramesh' }} "
-    
