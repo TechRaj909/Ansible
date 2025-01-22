@@ -1,7 +1,6 @@
 - name: ansible facts
-  hosts: local
-  connection: local
+  hosts: web
   tasks:
   - name: play1
     ansible.builtin.debug:
-      msg: "{{ ansible-facts }}"
+      msg: "{{ ansible_facts }}"
