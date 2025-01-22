@@ -23,6 +23,6 @@
       fruits:
         - {'key': 'apple', 'value': 'one'}
         - {'key': 'banana', 'value': 'two'}
-        - {'key': 'orange', 'value': 'three'},
+        - {'key': 'orange', 'value': 'three'}
     ansible.builtin.debug:
       msg: "{{ fruits | items2dict }}"
