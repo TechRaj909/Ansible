@@ -1,6 +1,5 @@
 - name: loops
-  hosts: local
-  conection: local
+  hosts: web
   tasks: 
   - name: play1
     ansible.builtin.debug:
