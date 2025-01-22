@@ -16,6 +16,6 @@
         apple: one
         banana: two
         orange: threee
-      ansible.builtin.debug:
-        msg: "my fruits count{{ fruits | dict2items }}"
+    ansible.builtin.debug:
+      msg: "my fruits count{{ fruits | dict2items }}"
     
